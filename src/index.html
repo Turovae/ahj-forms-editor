@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="app">
+    <div class="products">
+      <div class="products-header">
+        <div class="header-title">Товары</div>
+        <button class="header-btn-add">+</button>
+      </div>
+      <table class="products-table">
+        <thead class="table-header">
+          <tr>
+            <th>Название</th>
+            <th>Стоимость</th>
+            <th>Действия</th>
+          </tr>
+        </thead>
+        <tbody class="products-items">
+          <tr class="item">
+            <td class="item-name">iPhone XR</td>
+            <td class="item-price">60000</td>
+            <td class="item-controls">
+              <button class="btn-update">&#9998;</button>
+              <button class="btn-edit">X</button>
+            </td>
+          </tr>
+          <tr class="item">
+            <td class="item-name">Samsung Galaxy S10+</td>
+            <td class="item-price">80000</td>
+            <td class="item-controls">
+              <button class="btn-update">&#9998;</button>
+              <button class="btn-edit">X</button>
+            </td>
+          </tr>
+          <tr class="item">
+            <td class="item-name">Huawei View</td>
+            <td class="item-price">50000</td>
+            <td class="item-controls">
+              <button class="btn-update">&#9998;</button>
+              <button class="btn-edit">X</button>
+            </td>
+          </tr>
+        </tbody>
+      </table> 
+    </div>
+  </div>
+  <form>
+    <label>Название</label>
+    <input name="name" type="text">
+    <label>Стоимость</label>
+    <input name="price"  type="text">
+    <button>Сохранить</button>
+    <button>Отмена</button>
+  </form>
+</body>
+</html>
