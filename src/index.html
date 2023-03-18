@@ -11,7 +11,7 @@
     <div class="products">
       <div class="products-header">
         <div class="header-title">Товары</div>
-        <button class="header-btn-add">+</button>
+        <button class="product-btn btn-add">+</button>
       </div>
       <table class="products-table">
         <thead class="table-header">
@@ -26,37 +26,45 @@
             <td class="item-name">iPhone XR</td>
             <td class="item-price">60000</td>
             <td class="item-controls">
-              <button class="btn-update">&#9998;</button>
-              <button class="btn-edit">X</button>
+              <button class="product-btn btn-update">&#9998;</button>
+              <button class="product-btn btn-edit">X</button>
             </td>
           </tr>
           <tr class="item">
             <td class="item-name">Samsung Galaxy S10+</td>
             <td class="item-price">80000</td>
             <td class="item-controls">
-              <button class="btn-update">&#9998;</button>
-              <button class="btn-edit">X</button>
+              <button class="product-btn btn-update">&#9998;</button>
+              <button class="product-btn btn-edit">X</button>
             </td>
           </tr>
           <tr class="item">
             <td class="item-name">Huawei View</td>
             <td class="item-price">50000</td>
             <td class="item-controls">
-              <button class="btn-update">&#9998;</button>
-              <button class="btn-edit">X</button>
+              <button class="product-btn btn-update">&#9998;</button>
+              <button class="product-btn btn-edit">X</button>
             </td>
           </tr>
         </tbody>
       </table> 
     </div>
   </div>
-  <form>
-    <label>Название</label>
-    <input name="name" type="text">
-    <label>Стоимость</label>
-    <input name="price"  type="text">
-    <button>Сохранить</button>
-    <button>Отмена</button>
-  </form>
+  <div class="form-wrapper" style="display: none;">
+    <form class="form">
+      <div class="form-row">
+        <label for="product-name" class="form-hint">Название</label>
+        <input id="product-name" name="product-name" id="" type="text" class="form-input">
+      </div>
+      <div class="form-row">
+        <label for="product-price" class="form-hint">Стоимость</label>
+        <input id="product-price" name="product-price" type="text" class="form-input">
+      </div>
+      <div class="form-row form-controls">
+        <button class="form-btn form-save">Сохранить</button>
+        <button class="form-btn form-return">Отмена</button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
